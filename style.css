@@ -46,7 +46,7 @@ h4{
     font-size: medium;
     font-weight: 400;
     margin-top: -1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--text-color);
 }
   
@@ -89,7 +89,7 @@ h4{
 }
 img{
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     display: block;
     margin: 0rem auto;
 }
