@@ -196,18 +196,18 @@ function clickHandler(){
             year: Number(listOfDate[0])
         }
     }else{
-        resultRef.innerText = "Please enter the Date!! ✍️✍️"
+        resultRef.innerText = "Please enter the Date!!📅"
     }
     var isPalindrome = checkPalindromeForAllDateFormat(date);
     if(isPalindrome){
-        resultRef.innerText = "Yay! Your Birthday is palindrome!! 🥳🥳"
+        resultRef.innerText = "Yay! Your Birthday is palindrome!!🎊🎊"
     }else{
         var [ctr1, nextDate] = getNextPalindromeDate(date);
         var [ctr2, prevDate] = getPreviousPalindromeDate(date);
         if(ctr1 > ctr2){
-            resultRef.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days. 😔😔`;
+            resultRef.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days.💔`;
         }else{
-            resultRef.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days. 😔😔`;
+            resultRef.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days. 💔`;
         }
         
     }

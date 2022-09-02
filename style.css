@@ -7,9 +7,9 @@
 }
 
 :root{
-    --background-color: #fff0e8;
-    --text-color: #021401;
-    --primary-color: #cc6229;
+    --background-color:  #F9F7F7;
+    --text-color:  #112D4E;
+    --primary-color: #3F72AF;
 }
   
 body{
@@ -17,7 +17,6 @@ body{
     color: var(--text-color);
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
-    margin: 3rem;
 }
 
 a {
@@ -28,9 +27,27 @@ li {
     list-style: none;
 }
 
+.container{
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+    padding: 0rem 1rem;
+    background-color: var(--background-color);
+}
+
 h3 {
     font-size: xx-large;
-    margin: 2rem;
+    margin: 1rem;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+}
+h4{
+    font-size: medium;
+    font-weight: 400;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
 }
   
 .input-label {
@@ -41,14 +58,14 @@ h3 {
   }
   
 .input {
-    font-size: 14px;
-    outline: #fff;
-    padding: 0.6rem 1rem;
-    margin:  0.5rem 1rem 2rem 1rem;
+    padding: 0.8rem;
+    margin:  0.8rem 0rem 2rem 0rem;
     border: 1px solid var(--text-color);
+    color: var(--text-color);
     border-radius: 0.5rem;
     width: 100%;
     max-width: 258px;
+    background: transparent;
 }
   
 #show-btn {
@@ -65,9 +82,46 @@ h3 {
 }
   
 #result {
-    font-size: x-large;
-    margin: 2rem 0;
+    font-size: large;
+    margin: 3rem 0;
     color: var(--primary-color);
     font-weight: 600;
 }
+img{
+    box-sizing: border-box;
+    width: 76%;
+    display: block;
+    margin: 0rem auto;
+}
   
+
+.footer{
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer h4{
+   margin-bottom: 0.2rem; 
+   color: var(--text-color);
+   font-weight: 400;
+   font-size: 0.8rem;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+   font-size: 0.8rem;
+ }
+ .list-non-bullet{
+    list-style: none;
+    padding: 0;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem ;
+}
+.link{
+    color: var(--text-color) !important;
+    font-weight: 400 !important;
+}
